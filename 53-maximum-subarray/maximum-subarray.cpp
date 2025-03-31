@@ -7,9 +7,10 @@ public:
 
         for(int i=0; i<n; i++){
              sum+=nums[i];
-             if(sum>maxi){
+             maxi = max(sum,maxi);
+            /* if(sum>maxi){
                 maxi = sum;
-             }
+             }*/
 
              if(sum<0){
                 sum = 0;
