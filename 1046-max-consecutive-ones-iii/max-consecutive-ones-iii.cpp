@@ -8,7 +8,7 @@ public:
 
         while(right<nums.size()){
             if(nums[right]==0) zeroes++;
-            if(zeroes>k){
+            while(zeroes>k){
                 if(nums[left] ==0) zeroes--;
                 left++;
             } 
